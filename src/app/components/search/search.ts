@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { FilmsServices } from '../../services/films';
 
 @Component({
   selector: 'app-search',
@@ -8,4 +9,19 @@ import { Component } from '@angular/core';
 })
 export class Search {
 
+  public searchString: string = ''
+
+  constructor(private _filmsService: FilmsServices){
+
+  }
+
+  public updateValue(event: Event){
+    const target = event.target as HTMLInputElement
+    this.searchString = target.value
+
+  }
+
+  public updateSearch(event: Event){
+    this._filmsService.searchString = this.searchString
+  }
 }

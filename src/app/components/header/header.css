@@ -1,31 +1,39 @@
-.header{
+.header {
     margin-top: 34px;
     margin-bottom: 15px;
 }
 
-.header-box{
+.header-box {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.header-logo h1{
+.header-logo {
+    text-decoration: none;
+
+}
+
+.header-logo h1 {
     margin: 0;
     font-family: Inter, sans-serif;
     font-size: 24px;
     font-weight: 700;
     line-height: 29px;
+    color: rgba(0, 0, 0, 1);
 
 }
-.header-logo p{
+
+.header-logo p {
     margin: 0;
-        font-family: Inter;
+    font-family: Inter;
     font-size: 12px;
     font-weight: 300;
     line-height: 15px;
+    color: rgba(0, 0, 0, 1);
 }
 
-.header-controls a{
+.header-controls a {
     color: rgba(0, 0, 0, 1);
     font-family: Inter, sans-serif;
     font-size: 14px;
@@ -34,20 +42,21 @@
     text-decoration: none;
 }
 
-.header-controls a:hover{
+.header-controls a:hover {
     color: rgba(255, 73, 73, 1);
 }
 
-.header-controls--mobile{
+.header-controls--mobile {
     display: none;
 }
 
-@media (max-width:768px){
-    .header-controls{
+@media (max-width:768px) {
+    .header-controls {
         display: none;
-        
+
     }
-    .header-controls--mobile{
+
+    .header-controls--mobile {
         display: block;
     }
 
