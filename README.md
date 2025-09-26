@@ -1,4 +1,5 @@
-# NetfeelsApp
+# Netfeels - a website for searching TV series
+## **Link** to the website: https://x-xom.github.io/netfeels-app/
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.3.2.
 
